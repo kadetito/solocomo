@@ -1,0 +1,34 @@
+{
+  "_from": "git+https://github.com/shuhailshuvo/cordova-plugin-SimpleLogin.git",
+  "_id": "cordova-plugin-simplelogin@1.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-simplelogin",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/shuhailshuvo/cordova-plugin-SimpleLogin.git",
+    "rawSpec": "https://github.com/shuhailshuvo/cordova-plugin-SimpleLogin.git",
+    "saveSpec": "git+https://github.com/shuhailshuvo/cordova-plugin-SimpleLogin.git",
+    "fetchSpec": "https://github.com/shuhailshuvo/cordova-plugin-SimpleLogin.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/shuhailshuvo/cordova-plugin-SimpleLogin.git#0a95b7c4ce39726f8684f80807297afc07020bc4",
+  "_spec": "https://github.com/shuhailshuvo/cordova-plugin-SimpleLogin.git",
+  "_where": "C:\\AppServ\\www\\solocomo",
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-simplelogin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova plugin to authenticate user",
+  "name": "cordova-plugin-simplelogin",
+  "version": "1.0.0"
+}
