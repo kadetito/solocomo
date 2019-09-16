@@ -15,9 +15,6 @@
     margin-bottom: 30px
 }
 
-.header {
-    margin-bottom: 20px
-}
 
 
 
@@ -34,11 +31,19 @@
     max-height: 100%
 }
 
-.header {
+.header {  position: fixed !important;
     background-color:#000;
-    background-size: 100px 100px;
-    height: 61px
+    height: 61px;
+    margin-bottom: 20px;
+    top:0;
+    left:0;
+
+  z-index: 999;
+  width: 100%;
+
+    
 }
+
 
 .header-logo {
     margin-top: 18px;

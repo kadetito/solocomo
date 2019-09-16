@@ -1,164 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Example | React SimpleTabs</title>
+    <link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.1/normalize.css">
+    <link rel="stylesheet" href="css/react-simpletabs.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="content">
+      <h2 class="title">React SimpleTabs</h2>
+      <div id="tabs"></div>
+    </div>
 
-<!DOCTYPE HTML><head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<title>Epsilon Mobile Framework - Version 4.0</title>
-<link href="../residuo/styles/style.css" rel="stylesheet" type="text/css">
-<link href="../residuo/styles/reset.css" rel="stylesheet" type="text/css">
-<script src="https://kit.fontawesome.com/d1fa0d334c.js"></script>
-<script type="text/javascript" src="../residuo/scripts/jquery.js"></script>
-<script type="text/javascript" src="../residuo/scripts/framework.plugins.js"></script>
-<script type="text/javascript" src="../residuo/scripts/custom.js"></script>
-</head>
-<body>
-<div class="all-elements">
-<div class="snap-drawers">
-
-<div class="snap-drawer snap-drawer-left">
-<div class="sidebar-header">
-<a href="#"><i class="fa fa-phone"></i></a>
-<a href="#"><i class="fa fa-comment"></i></a>
-<a href="#"><i class="fa fa-facebook"></i></a>
-<a href="#"><i class="fa fa-twitter"></i></a>
-<a href="#"><i class="fa fa-times"></i></a>
-</div>
-<div class="sidebar-logo">
-<a href="index.html"></a>
-</div>
-<div class="sidebar-divider">
-Navigation
-</div>
-<ul class="sidebar-navigation">
-<li><a href="#" class="active-menu"><i class="fa fa-home"></i>Home<i class="fa fa-circle"></i></a></li>
-<li class="has-submenu">
-<a class="deploy-submenu" href="#"><i class="fa fa-cog"></i>Features<i class="fa fa-plus"></i></a>
-<ul class="submenu">
-<li><a href="#"><i class="fa fa-angle-right"></i>Type<i class="fa fa-circle"></i></a></li>
-<li><a href="#"><i class="fa fa-angle-right"></i>jQuery<i class="fa fa-circle"></i></a></li>
-<li><a href="#"><i class="fa fa-angle-right"></i>Others<i class="fa fa-circle"></i></a></li>
-</ul>
-</li>
-<li class="has-submenu">
-<a class="deploy-submenu" href="#"><i class="fa fa-picture-o"></i>Portfolios<i class="fa fa-plus"></i></a>
-<ul class="submenu">
-<li><a href="#"><i class="fa fa-angle-right"></i>Adaptive<i class="fa fa-circle"></i></a></li>
-<li><a href="#"><i class="fa fa-angle-right"></i>One Column<i class="fa fa-circle"></i></a></li>
-<li><a href="#"><i class="fa fa-angle-right"></i>Two Columns<i class="fa fa-circle"></i></a></li>
-</ul>
-</li>
-<li class="has-submenu">
-<a class="deploy-submenu" href="#"><i class="fa fa-camera"></i>Gallery<i class="fa fa-plus"></i></a>
-<ul class="submenu">
-<li><a href="#"><i class="fa fa-angle-right"></i>Square Thumbs<i class="fa fa-circle"></i></a></li>
-<li><a href="#"><i class="fa fa-angle-right"></i>Round Thumbs<i class="fa fa-circle"></i></a></li>
-<li><a href="#"><i class="fa fa-angle-right"></i>Wide Thumbs<i class="fa fa-circle"></i></a></li>
-</ul>
-</li>
-<li class="has-submenu">
-<a class="deploy-submenu" href="#"><i class="fa fa-file"></i>Pages<i class="fa fa-plus"></i></a>
-<ul class="submenu">
-<li><a href="page-error.html"><i class="fa fa-angle-right"></i>404 Page<i class="fa fa-circle"></i></a></li>
-<li><a href="page-soon.html"><i class="fa fa-angle-right"></i>Soon Page<i class="fa fa-circle"></i></a></li>
-<li><a href="page-updates.html"><i class="fa fa-angle-right"></i>Updates Page<i class="fa fa-circle"></i></a></li>
-<li><a href="page-timeline.html"><i class="fa fa-angle-right"></i>Timeline Page<i class="fa fa-circle"></i></a></li>
-<li><a href="index2.html"><i class="fa fa-angle-right"></i>Home Fullscreen<i class="fa fa-circle"></i></a></li>
-</ul>
-</li>
-<li class="has-submenu">
-<a class="deploy-submenu" href="#"><i class="fa fa-mobile"></i>App Specific<i class="fa fa-plus"></i></a>
-<ul class="submenu">
-<li><a href="#"><i class="fa fa-angle-right"></i>Login<i class="fa fa-circle"></i></a></li>
-<li><a href="#"><i class="fa fa-angle-right"></i>Signup<i class="fa fa-circle"></i></a></li>
-<li><a href="#"><i class="fa fa-angle-right"></i>Coverpage<i class="fa fa-circle"></i></a></li>
-<li><a href="#"><i class="fa fa-angle-right"></i>User List<i class="fa fa-circle"></i></a></li>
-<li><a href="#"><i class="fa fa-angle-right"></i>Calendar<i class="fa fa-circle"></i></a></li>
-<li><a href="#"><i class="fa fa-angle-right"></i>Activity Feed<i class="fa fa-circle"></i></a></li>
-<li><a href="#"><i class="fa fa-angle-right"></i>Chat Bubbles<i class="fa fa-circle"></i></a></li>
-<li><a href="#"><i class="fa fa-angle-right"></i>Share Boxes<i class="fa fa-circle"></i></a></li>
-</ul>
-</li>
-<li><a href="#"><i class="fa fa-youtube-play"></i>Videos<i class="fa fa-circle"></i></a></li>
-<li><a href="#"><i class="fa fa-pencil"></i>Blog<i class="fa fa-circle"></i></a></li>
-<li><a href="#"><i class="fa fa-envelope"></i>Contact<i class="fa fa-circle"></i></a></li>
-</ul>
-<div class="sidebar-divider">
-Copyright 2016. All rights reserved.
-</div>
-</div>
-<div class="snap-drawer snap-drawer-right">
-<div class="sidebar-header">
-<a href="#"><i class="fa fa-phone"></i></a>
-<a href="#"><i class="fa fa-comment"></i></a>
-<a href="#"><i class="fa fa-facebook"></i></a>
-<a href="#"><i class="fa fa-twitter"></i></a>
-<a href="#"><i class="fa fa-times"></i></a>
-</div>
-<div class="sidebar-logo">
-<a href="index.html"></a>
-</div>
-<div class="sidebar-divider">
-get social with us
-</div>
-<ul class="sidebar-navigation">
-<li><a href="#"><i class="fa fa-facebook"></i>Facebook<i class="fa fa-caret-right"></i></a></li>
-<li><a href="#"><i class="fa fa-twitter"></i>Twitter<i class="fa fa-caret-right"></i></a></li>
-<li><a href="#"><i class="fa fa-google-plus"></i>Google Plus<i class="fa fa-caret-right"></i></a></li>
-</ul>
-<div class="sidebar-divider">
-page updates and news
-</div>
-<a href="#" class="sidebar-update red-update">
-<i class="fa fa-times"></i>
-<strong>Warning</strong>
-<em>Released a right sidebar item</em>
-</a>
-<a href="#" class="sidebar-update green-update">
-<i class="fa fa-check"></i>
-<strong>All great!</strong>
-<em>Released a right sidebar item</em>
-</a>
-<a href="#" class="sidebar-update blue-update">
-<i class="fa fa-info"></i>
-<strong>Information</strong>
-<em>Released a right sidebar item</em>
-</a>
-<a href="#" class="sidebar-update yellow-update full-bottom">
-<i class="fa fa-warning"></i>
-<strong>Atention</strong>
-<em>Released a right sidebar item</em>
-</a>
-<div class="sidebar-divider">
-Copyright 2015. All rights reserved.
-</div>
-</div>
-</div>
-
-<div id="content" class="snap-content">
-<div class="header">
-<a href="index.html" class="header-logo"></a>
-<a href="#" class="open-menu"><i class="fa fa-navicon"></i></a>
-<a href="#" class="open-more"><i class="fa fa-envelope-o"></i></a>
-</div>
-<div class="container">
-<h4 class="demo-title">Meet Slidebox</h4>
-<p class="demo-text">
-Slidebox is a dual sidebar navigation menu template to start building your next mobile product on.
-It's built using CSS3, HTML, and jQuery and is compatible with PhoneGap and Cordova Build as well.
-You can activate the sidebar by swiping left or right too! Build your next template using this starter kit! It's easy!
-</p>
-<div class="decoration"></div>
-<h4 class="demo-title">Need the ready built site template?</h4>
-<p class="demo-text">
-We have the ready built product using this navigation, called SlideBox, and you can purchase it from
-ThemeForest for $11.00. <a target="_blank" href="https://themeforest.net/item/slidebox-mobile-tablet-responsive-template/10371967">Get it here!</a>
-</p>
-<a class="full-bottom" target="_blank" href="https://themeforest.net/item/slidebox-mobile-tablet-responsive-template/10371967?ref=Enabled">
-<img src="https://s3.envato.com/files/121933700/preview_590.__large_preview.png" class="responsive-image" alt="img">
-</a>
-<div class="decoration"></div>
-</div>
-</div>
-</div>
-</body>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/react/0.11.2/react-with-addons.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/react/0.11.2/JSXTransformer.js"></script>
+    <script src="js/react-simpletabs.js"></script>
+    <script type="text/jsx" src="js/app.js"></script>
+  </body>
+</html>

@@ -5,12 +5,13 @@
 		<meta http-equiv="Content-Security-Policy" content=" media-src *; img-src 'self' data: content:;">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
+        
+        
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+
+	   <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <link href="css/sidebars.css" rel="stylesheet" type="text/css">
-		<link href="css/reset.css" rel="stylesheet" type="text/css">
-				<script src="js/d1fa0d334c.js"></script>
-		<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
 <!-- 	<script src='js/validar_session_storage.js'></script>   -->
 <!-- 	<script type="text/javascript"> 
 // 	  function preloadFunc() { 
@@ -18,20 +19,23 @@
 // 		  } 
 // 	  window.onpaint = preloadFunc(); 
 	 </script>  -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/react/0.11.2/react-with-addons.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/react/0.11.2/JSXTransformer.js"></script>
-    <script src="react-simpletabs.js"></script>
-    <script type="text/jsx" src="app.js"></script>
 
-	<link rel="stylesheet" href="css/loader.css">
-   <link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.1/normalize.css">
-    <link rel="stylesheet" href="react-simpletabs.css">
-	<script>
+
+				<script src="js/d1fa0d334c.js"></script>
+		<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+			<script>
 		$(window).load(function(){
 		    $('.sk-fading-circle-back').fadeOut(100);
 		});
 	</script>
+
+	<link rel="stylesheet" href="css/loader.css">
+
+
 	
+    <link href="pageslider/ratchet/css/ratchet.css" rel="stylesheet" type="text/css">
+    <link href="pageslider/css/styles.css" rel="stylesheet" type="text/css">
+    <link href="pageslider/css/pageslider.css" rel="stylesheet" type="text/css">
 
 
         <title>SoloComo</title>
@@ -53,6 +57,13 @@
 	  </div>
 	</div>   
 	
+		<!-- header -->
+<div class="header">
+<a href="index.html" class="header-logo"></a>
+<a href="#" class="open-menu"><i class="fa fa-navicon"></i></a>
+<a href="#" class="open-more"><i class="fa fa-envelope-o"></i></a>
+</div>
+	<!-- //header -->
 	
 <div class="all-elements">
  
@@ -130,22 +141,67 @@ Navigation
 Copyright 2016. All rights reserved.
 </div>
 </div>
+
+
+
+
+<div class="snap-drawer snap-drawer-right">
+<div class="sidebar-header">
+<a href="#"><i class="fa fa-phone"></i></a>
+<a href="#"><i class="fa fa-comment"></i></a>
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+<a href="#"><i class="fa fa-times"></i></a>
+</div>
+<div class="sidebar-logo">
+<a href="index.html"></a>
+</div>
+<div class="sidebar-divider">
+get social with us
+</div>
+
+<ul class="sidebar-navigation">
+<li><a href="#"><i class="fa fa-facebook"></i>Facebook<i class="fa fa-caret-right"></i></a></li>
+<li><a href="#"><i class="fa fa-twitter"></i>Twitter<i class="fa fa-caret-right"></i></a></li>
+<li><a href="#"><i class="fa fa-google-plus"></i>Google Plus<i class="fa fa-caret-right"></i></a></li>
+</ul>
+<div class="sidebar-divider">
+page updates and news
+</div>
+<a href="#" class="sidebar-update red-update">
+<i class="fa fa-times"></i>
+<strong>Warning</strong>
+<em>Released a right sidebar item</em>
+</a>
+<a href="#" class="sidebar-update green-update">
+<i class="fa fa-check"></i>
+<strong>All great!</strong>
+<em>Released a right sidebar item</em>
+</a>
+<a href="#" class="sidebar-update blue-update">
+<i class="fa fa-info"></i>
+<strong>Information</strong>
+<em>Released a right sidebar item</em>
+</a>
+<a href="#" class="sidebar-update yellow-update full-bottom">
+<i class="fa fa-warning"></i>
+<strong>Atention</strong>
+<em>Released a right sidebar item</em>
+</a>
+<div class="sidebar-divider">
+Copyright 2015. All rights reserved.
+</div>
+
+
+
+
 </div>
 <!-- //sidebar -->
 
 
 <!-- contenedor -->
 <div id="content" class="snap-content">
-	<!-- header -->
-	<div class="header">
-	<div class="row">
-<a href="index.html" class="header-logo"></a>
-<a href="#" class="open-more"><img src="img/bars.png" alt="bars" /></a>
-		<!-- <a href="#" class="open-more"><i class="fa fa-envelope-o"></i></a> -->
-	</div>
-	</div>
-	<!-- //header -->
-	
+
 	
 	
 	
@@ -163,12 +219,9 @@ Copyright 2016. All rights reserved.
 	
 	
 	<!-- contenido -->
-	<div class="container">
-   <div class="content">
-      <h2 class="title">React SimpleTabs</h2>
-      <div id="tabs"></div>
-    </div>
-	</div>
+
+<div id="contenedor"></div>
+
 	<!-- //contenido -->
 	
 	
@@ -211,7 +264,11 @@ Copyright 2016. All rights reserved.
 		<script src='js/jquery.validate.js'></script>
 		<script src="js/jquery.cookie-1.3.1.js"></script>
 		<script src="js/pulltorefresh.js"></script>
-		<script src="js/react.js"></script>
-        
+    <script src="http://fb.me/react-with-addons-0.12.1.js"></script>
+    <script src="http://fb.me/JSXTransformer-0.12.1.js"></script>
+    <script src="pageslider/js/router.js"></script>
+    <script type="text/jsx" src="pageslider/js/pageslider-react.js"></script>
+    <script type="text/jsx" src="pageslider/js/app.js"></script>
+
     </body>
 </html>
