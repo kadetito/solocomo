@@ -23,11 +23,44 @@
   
     <platform name="android">
         <allow-intent href="market:*" />
+                <icon density="ldpi" src="www/res/icon/cordova_android_36.png" />
+        <icon density="mdpi" src="www/res/icon/cordova_android_48.png" />
+        <icon density="hdpi" src="www/res/icon/cordova_android_72.png" />
+        <icon density="xhdpi" src="www/res/icon/cordova_android_96.png" />
+        <icon density="xxhdpi" src="www/res/icon/cordova_ios_144.png" />
+        <splash density="land-hdpi" src="www/res/screen/android_hdpi_landscape.png" />
+        <splash density="land-ldpi" src="www/res/screen/android_ldpi_landscape.png" />
+        <splash density="land-mdpi" src="www/res/screen/android_mdpi_landscape.png" />
+        <splash density="land-xhdpi" src="www/res/screen/android_xhdpi_landscape.png" />
+        <splash density="hdpi" src="www/res/screen/android_hdpi_portrait.png" />
+        <splash density="ldpi" src="www/res/screen/android_ldpi_portrait.png" />
+        <splash density="mdpi" src="www/res/screen/android_mdpi_portrait.png" />
+        <splash density="xhdpi" src="www/res/screen/android_xhdpi_portrait.png" />
     </platform>
     
 
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
+         <icon height="180" src="www/res/icon/apple-icon-180x180.png" width="180" />
+        <icon height="60" src="www/res/icon/apple-icon-60x60.png" width="60" />
+        <icon height="120" src="www/res/icon/apple-icon-120x120.png" width="120" />
+        <icon height="76" src="www/res/icon/apple-icon-76x76.png" width="76" />
+        <icon height="152" src="www/res/icon/apple-icon-152x152.png" width="152" />
+        <icon height="80" src="www/res/icon/cordova_bb_80.png" width="80" />
+        <icon height="57" src="www/res/icon/apple-icon-57x57.png" width="57" />
+        <icon height="114" src="www/res/icon/cordova_ios_114.png" width="114" />
+        <icon height="72" src="www/res/icon/cordova_ios_72.png" width="72" />
+        <icon height="144" src="www/res/icon/cordova_ios_144.png" width="144" />
+        <splash height="480" src="www/res/screen/iphone_portrait.png" width="320" />
+        <splash height="1024" src="www/res/screen/ipad_portrait.png" width="768" />
+        <splash height="2048" src="www/res/screen/ipad_retina_landscape.png" width="1536" />
+        <splash height="768" src="www/res/screen/ipad_landscape.png" width="1024" />
+        <splash height="1536" src="www/res/screen/ipad_retina_portrait.png" width="2048" />
+        <splash height="1136" src="www/res/screen/iphone_retina_portrait.png" width="640" />
+        <splash height="1334" src="www/res/screen/ipad_portrait.png" width="750" />
     </platform>
+        <preference name="Fullscreen" value="true" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="KeepRunning" value="true" />
 </widget>
