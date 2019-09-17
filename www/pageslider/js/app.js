@@ -4,8 +4,12 @@ var Header = React.createClass({
     render: function () {
         return (
             <header className="bar bar-nav headerpaginas">
-                <a href="#" className={"icon icon-left-nav pull-left" + (this.props.back==="true"?"":" hidden")}>{this.props.text}</a>
-               
+            <div className="row">
+              <div className="col-6 smhead"><a href="#" className={"icon pull-left posicionad retorno" + (this.props.back==="true"?"":" hidden")}>{this.props.text}</a></div>
+              <div className="col-6 smhead text-right"><img src={this.props.imageUri}/></div>
+             </div>
+                
+                
             </header>
         );
     }
@@ -30,6 +34,10 @@ var HomePage = React.createClass({
       </div>           
                     
                     
+      
+      <div className="row rowaviso"><div className="col-12"><div className="card"><small>En este momento está</small>
+      <h4>CERRADO</h4><small>Abriremos a las 16:40h.</small></div></div></div>
+      
                 </div>
             </div>
         );
@@ -39,8 +47,9 @@ var HomePage = React.createClass({
 var Page1 = React.createClass({
     render: function () {
         return (
+        		
             <div className={"page page1 " + this.props.position}>
-                <Header text="Page 1" back="true"/>
+                <Header text="< Pizzas" imageUri="img/min-iconopizza.png" back="true"/>
                 <div className="content">
                     <div className="card">
                         <ul className="table-view">
@@ -52,6 +61,7 @@ var Page1 = React.createClass({
                             </li>
                         </ul>
                     </div>
+                    
                 </div>
             </div>
         );
@@ -62,7 +72,7 @@ var Page2 = React.createClass({
     render: function () {
         return (
             <div className={"page page2 " + this.props.position}>
-                <Header text="Page 2" back="true"/>
+            <Header text="< Carta" imageUri="img/min-menusicono.png" back="true"/>
                 <div className="content">
                     <img src="images/react.png"/>
                 </div>
@@ -75,7 +85,7 @@ var Page3 = React.createClass({
     render: function () {
         return (
             <div className={"page page3 " + this.props.position}>
-                <Header text="Page 3" back="true"/>
+            <Header text="< Ofertas" imageUri="img/mini-ofertasicono.png" back="true"/>
                 <div className="content">
                     <img src="images/react.png"/>
                 </div>
@@ -88,7 +98,7 @@ var Page4 = React.createClass({
     render: function () {
         return (
             <div className={"page page4 " + this.props.position}>
-                <Header text="Page 4" back="true"/>
+            <Header text="< Zonas de reparto" imageUri="img/min-entregaicono.png" back="true"/>
                 <div className="content">
                     <img src="images/react.png"/>
                 </div>

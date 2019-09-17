@@ -7,7 +7,8 @@
 }
 
 .page1 .content {
-    background-color: #103754;
+
+    background-color: #000 !important;
 }
 
 .page2 .content{
