@@ -107,23 +107,7 @@
     font-size: 14px
 }
 
-.snap-content {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: auto;
-    height: auto;
-    z-index: 2;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0)
-}
+
 
 .snap-drawers {
     position: absolute;
@@ -255,10 +239,7 @@
     display: none
 }
 
-#content {
-    background-color: #fff;
-    overflow-x: hidden
-}
+
 
 .drawer-inner {
     -webkit-transition: opacity .3s ease;

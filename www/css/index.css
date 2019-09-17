@@ -25,11 +25,12 @@ body {
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
     background-color:#E4E4E4;
-    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+
     font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
     font-size:12px;
     height:100vh;
     margin:0px;
+     top:80px;
     padding:0px;
     /* Padding to avoid the "unsafe" areas behind notches in the screen */
     padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-right, 0px);
@@ -39,7 +40,7 @@ body {
 
 /* Portrait layout (default) */
 .app {
-    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
+
     position:absolute;             /* position in the center of the screen */
     left:50%;
     top:50%;
@@ -121,5 +122,74 @@ a { text-decoration: none; }
 ============================================================================= */
 .content .row{padding:0px;margin:1px;}
 .content .col-6{padding:0px;margin:0px;}
-.tarjeta{background-color:#eeeae4;padding:0px;margin:1px;}
-#contenedor{margin-top:70px;}
+.content .col-6 p{color:#ffffff;}
+.content .toprow{padding:0px;padding-top:15%;}
+
+a.bothov{background-color:transparent !important;border:0px;}
+a:active.bothov{opacity:0.5;top:2px;left:2px;}
+
+
+
+video { 
+ 
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+ 
+  position: fixed;    
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%); 
+ 
+  z-index: -100;
+ 
+  background-size: cover;
+ 
+}
+
+
+/* .content{background:url('../img/backhome.jpg') !important; */
+/* background-size: cover !important; */
+/* } */
+.content{background:rgba(0,0,0,0.3) !important;
+
+}
+
+.tarjeta{
+	background-color:transparent;padding:0px;margin:1px;
+	text-align:center;
+	}
+
+
+#contenedor{padding-top:80px;background-color:#000;}
+.logotipo{position: fixed;margin-top:16px;margin-left:16px;z-index: 999;}
+.logotipocontainer{height:80px;width:100%;
+background-color:#ffffff;
+position: fixed;
+margin-top:0px;
+margin-left:0px;
+z-index: 998;border-bottom:1px solid #dddddd;}
+.headerpaginas{
+	height:80px;width:100%;background-color:transparent !important;border:0px !important;
+	}
+	
+	
+.snap-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    z-index: 2;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+}
+

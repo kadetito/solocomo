@@ -3,9 +3,9 @@
 var Header = React.createClass({
     render: function () {
         return (
-            <header className="bar bar-nav">
-                <a href="#" className={"icon icon-left-nav pull-left" + (this.props.back==="true"?"":" hidden")}></a>
-                <h1 className="title">{this.props.text}</h1>
+            <header className="bar bar-nav headerpaginas">
+                <a href="#" className={"icon icon-left-nav pull-left" + (this.props.back==="true"?"":" hidden")}>{this.props.text}</a>
+               
             </header>
         );
     }
@@ -16,17 +16,17 @@ var HomePage = React.createClass({
         return (
             <div className={"page " + this.props.position}>
                 <Header text="PageSlider"/>
-                <div className="content">
+                <div className="content ">
                 
                 
                 
-       <div className="row">
-        <div className="col-6"><div className="tarjeta"><a href="#page1">Pagqqqe 1</a></div></div>
-        <div className="col-6"><div className="tarjeta"><a href="#page2">Pagqqqe 1</a></div></div>
+       <div className="row toprow">
+        <div className="col-6"><div className="tarjeta"><a className="btn bothov" href="#page1"><img src="img/iconopizza.png" /></a><p>PIZZAS</p></div></div>
+        <div className="col-6"><div className="tarjeta"><a className="btn bothov"  href="#page2"><img src="img/menusicono.png" /></a><p>CARTA</p></div></div>
        </div>
        <div className="row">
-       <div className="col-6"><div className="tarjeta"><a href="#page3">Pagqqqe 3</a></div></div>
-       <div className="col-6"><div className="tarjeta"><a href="#page4">Pagqqqe 4</a></div></div>
+       <div className="col-6"><div className="tarjeta"><a className="btn bothov"  href="#page3"><img src="img/ofertasicono.png" /></a><p>OFERTAS</p></div></div>
+       <div className="col-6"><div className="tarjeta"><a className="btn bothov"  href="#page4"><img src="img/entregaicono.png" /></a><p>ZONAS REPARTO</p></div></div>
       </div>           
                     
                     
