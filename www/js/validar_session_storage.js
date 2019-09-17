@@ -1,4 +1,4 @@
-//$(DOCUMENT).READY(FUNCTION(){
+//$(document).ready(function() {
 
 	function validarSesion() {
 
