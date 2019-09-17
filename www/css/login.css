@@ -8,12 +8,13 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   outline: none;
 }
 
-body { background: url('../img/backhome.jpg');   background-size: cover;font-size: 62.5%; line-height: 1; padding-bottom: 55px; font-family: Arial, Geneva, sans-serif; }
+body { background: url('../img/backhome.jpg');   background-size: cover;
+font-size: 62.5%; line-height: 1; padding-bottom: 55px; font-family: Arial, Geneva, sans-serif; }
 
 
 input { outline: none; }
 
-
+.reacciontecla {max-width:220px;height:auto;}
 
 /* page structure */
 #w { width: 100%; margin: 0 auto; padding-top: 25px; }
@@ -36,17 +37,33 @@ input { outline: none; }
   padding: 25px;
 }
 
-/* inner page layouts */
-#content-login { display: block; height:100vh;position: relative; width: 100%; }
 
-#content-register { display: none; height:100vh;width: 100%; position: absolute; top: 0; left: 880px; }
+::-webkit-input-placeholder { /* Edge */
+  color: #ffffff;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #ffffff;
+}
+
+::placeholder {
+  color: #ffffff;
+}
+
+
+
+/* inner page layouts */
+#content-login { display: block; position: relative; width: 100%; }
+
+#content-register { display: none; width: 100%; position: absolute; top: 0; left: 880px; }
 
 a.slidelink { font-size: 1.25em; font-weight: normal; display: inline-block;  color:#ffffff;}
 .leftsidelink { font-size: 1.25em; font-weight: normal; display: inline-block; }
 
 
 /* form styles */
-label { display: block; font-weight: bold; color: #72757b; text-transform: uppercase; letter-spacing: 0.2em; font-size: 1.4em; line-height: 1.45em;  }
+label { display: block; font-weight: bold; color: #72757b; 
+text-transform: uppercase; letter-spacing: 0.2em; font-size: 1.4em; line-height: 1.45em;  }
 
 form#login, form#register { padding-top: 15px; padding-bottom: 20px; }
 
