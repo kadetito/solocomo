@@ -12,6 +12,9 @@
     },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "HelloCordova"
+    },
+    "cordova-plugin-googlemaps": {
+      "PACKAGE_NAME": "HelloCordova"
     }
   },
   "dependent_plugins": {}

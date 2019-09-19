@@ -8,6 +8,50 @@
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="CordovaGoogleMaps">
+        <param name="android-package" value="plugin.google.maps.CordovaGoogleMaps" />
+        <param name="onload" value="true" />
+        <param name="onreset" value="true" />
+    </feature>
+    <feature name="PluginMap">
+        <param name="android-package" value="plugin.google.maps.PluginMap" />
+    </feature>
+    <feature name="PluginPolyline">
+        <param name="android-package" value="plugin.google.maps.PluginPolyline" />
+    </feature>
+    <feature name="PluginPolygon">
+        <param name="android-package" value="plugin.google.maps.PluginPolygon" />
+    </feature>
+    <feature name="PluginMarker">
+        <param name="android-package" value="plugin.google.maps.PluginMarker" />
+    </feature>
+    <feature name="PluginCircle">
+        <param name="android-package" value="plugin.google.maps.PluginCircle" />
+    </feature>
+    <feature name="PluginTileOverlay">
+        <param name="android-package" value="plugin.google.maps.PluginTileOverlay" />
+    </feature>
+    <feature name="PluginGroundOverlay">
+        <param name="android-package" value="plugin.google.maps.PluginGroundOverlay" />
+    </feature>
+    <feature name="PluginKmlOverlay">
+        <param name="android-package" value="plugin.google.maps.PluginKmlOverlay" />
+    </feature>
+    <feature name="PluginGeocoder">
+        <param name="android-package" value="plugin.google.maps.PluginGeocoder" />
+    </feature>
+    <feature name="PluginLocationService">
+        <param name="android-package" value="plugin.google.maps.PluginLocationService" />
+    </feature>
+    <feature name="PluginEnvironment">
+        <param name="android-package" value="plugin.google.maps.PluginEnvironment" />
+    </feature>
+    <feature name="PluginMarkerCluster">
+        <param name="android-package" value="plugin.google.maps.PluginMarkerCluster" />
+    </feature>
+    <feature name="PluginStreetViewPanorama">
+        <param name="android-package" value="plugin.google.maps.PluginStreetViewPanorama" />
+    </feature>
     <name>HelloCordova</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
@@ -23,7 +67,27 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+    <icon density="ldpi" src="www/res/icon/cordova_android_36.png" />
+    <icon density="mdpi" src="www/res/icon/cordova_android_48.png" />
+    <icon density="hdpi" src="www/res/icon/cordova_android_72.png" />
+    <icon density="xhdpi" src="www/res/icon/cordova_android_96.png" />
+    <icon density="xxhdpi" src="www/res/icon/cordova_ios_144.png" />
+    <splash density="land-hdpi" src="www/res/screen/android_hdpi_landscape.png" />
+    <splash density="land-ldpi" src="www/res/screen/android_ldpi_landscape.png" />
+    <splash density="land-mdpi" src="www/res/screen/android_mdpi_landscape.png" />
+    <splash density="land-xhdpi" src="www/res/screen/android_xhdpi_landscape.png" />
+    <splash density="hdpi" src="www/res/screen/android_hdpi_portrait.png" />
+    <splash density="ldpi" src="www/res/screen/android_ldpi_portrait.png" />
+    <splash density="mdpi" src="www/res/screen/android_mdpi_portrait.png" />
+    <splash density="xhdpi" src="www/res/screen/android_xhdpi_portrait.png" />
     <preference name="loglevel" value="DEBUG" />
-    <preference name="android-minSdkVersion" value="14" />
-    <preference name="android-targetSdkVersion" value="27" />
+    <preference name="xwalkZOrderOnTop" value="true" />
+    <preference name="BackgroundColor" value="0" />
+    <preference name="android-minSdkVersion" value="19" />
+    <preference name="android-maxSdkVersion" value="28" />
+    <preference name="android-targetSdkVersion" value="26" />
+    <preference name="Fullscreen" value="true" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="KeepRunning" value="true" />
 </widget>

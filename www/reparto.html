@@ -1,128 +1,78 @@
-<!DOCTYPE HTML>
-<html lang="es">
-    <head>
-     <meta charset="utf-8">
-		<meta http-equiv="Content-Security-Policy" content=" media-src *; img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        
-        
-        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
 
-	   <link rel="stylesheet" href="css/bootstrap.min.css">
-		<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
-<script type="text/javascript" src="js/jquery.livequery.js"></script>
- 	<script src='js/validar_session_storage.js'></script>  
- 	<script type="text/javascript"> 
-	  function preloadFunc() { 
-		  validarSesion();
-		  } 
-	  window.onpaint = preloadFunc(); 
-	 </script>  
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript">
+    document.addEventListener("deviceready", function() {
+      var div = document.getElementById("map_canvas");
 
+      // If your app runs this program on browser,
+      // you need to set `API_KEY_FOR_BROWSER_RELEASE` and `API_KEY_FOR_BROWSER_DEBUG`
+      // before `plugin.google.maps.Map.getMap()`
+      //
+      //   API_KEY_FOR_BROWSER_RELEASE for `https:` protocol
+      //   API_KEY_FOR_BROWSER_DEBUG for `http:` protocol
+      //
+      // If your app does not use browser,
+      // you can comment out this code.
+      plugin.google.maps.environment.setEnv({
+        'API_KEY_FOR_BROWSER_RELEASE': 'AIzaSyA1o0kdIeGpzTGwZOLswA8DSy68FAPQfEo',
+        'API_KEY_FOR_BROWSER_DEBUG': ''
+      })
 
-		<script src="js/d1fa0d334c.js"></script>
+      // Create a Google Maps native view under the map_canvas div.
+      var map = plugin.google.maps.Map.getMap(div);
 
-		<script>
-		$(window).load(function(){
-		    $('.sk-fading-circle-back').fadeOut(100);
-		});
-	</script>
+      // If you click the button, do something...
+      var button = document.getElementById("button");
+      button.addEventListener("click", function() {
 
+        // Move to the position with animation
+        map.animateCamera({
+          target: {lat: 37.422359, lng: -122.084344},
+          zoom: 17,
+          tilt: 60,
+          bearing: 140,
+          duration: 5000
+        });
 
-	<link rel="stylesheet" href="css/loader.css">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
+        // Add a maker
+        var marker = map.addMarker({
+          position: {lat: 37.422359, lng: -122.084344},
+          title: "Welecome to \n" +
+                 "Cordova GoogleMaps plugin for iOS,Android and Browser!",
+          snippet: "This plugin is awesome!",
+          animation: plugin.google.maps.Animation.BOUNCE
+        });
 
-  <link rel="stylesheet" type="text/css" href="css/sidebexample.css">
+        // Show the info window
+        marker.showInfoWindow();
 
-		    <script type="text/javascript">
-    //recojo los parametros por URL 
-	var url_string = window.location.href;
-	var url = new URL(url_string);
-	var cparam = url.searchParams.get("param");
-	console.log(cparam);
-    </script>	
-        <style type="text/css">
-#map {
-  height: 100%;
-}
-/* Optional: Makes the sample page fill the window. */
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-        </style>
-<link href="css/carrito.css" rel="stylesheet" />
+      });
 
-<script type="text/javascript" src="js/get_pizzas.js"></script>
-<script type="text/javascript" src="js/procesar_carro.js"></script>
+    }, false);
 
-        <title>SoloComo</title>
-    </head>
-    <body class="pizza m-pagetransition"><div class="sk-fading-circle-back">
-	  <div class="sk-fading-circle">
-		  <div class="sk-circle1 sk-circle"></div>
-		  <div class="sk-circle2 sk-circle"></div>
-		  <div class="sk-circle3 sk-circle"></div>
-		  <div class="sk-circle4 sk-circle"></div>
-		  <div class="sk-circle5 sk-circle"></div>
-		  <div class="sk-circle6 sk-circle"></div>
-		  <div class="sk-circle7 sk-circle"></div>
-		  <div class="sk-circle8 sk-circle"></div>
-		  <div class="sk-circle9 sk-circle"></div>
-		  <div class="sk-circle10 sk-circle"></div>
-		  <div class="sk-circle11 sk-circle"></div>
-		  <div class="sk-circle12 sk-circle"></div>
-	  </div>
-	</div>   
-	
-<!-- react sidebar -->	
-<div id="sidebarb" class="infpzz"></div>
-<!-- react sidebar -->	
-
-
-
-
-
-
-<div id="map"></div>
-
-	
-
-
-
-
-
-
-
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-	<script src="js/tether.min.js"></script>
-        <script type="text/javascript" src="cordova.js"></script>
-
-
-        
-
-		<script src='js/jquery.validate.js'></script>
-		<script src="js/jquery.cookie-1.3.1.js"></script>
-
-    <script src="http://fb.me/react-with-addons-0.12.1.js"></script>
-    <script src="http://fb.me/JSXTransformer-0.12.1.js"></script>
-
-
-  <script src="js/sidebcommon.js"></script>
-  <script src="js/sidebbundle.js"></script>
-  <script src="js/sidebexample.js"></script>
-
- <script type="text/javascript" src="js/mapaindex.js"></script>
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3&sensor=true&language=da"></script>
-            <script 
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhlGW2tTC08Y2gOCFnwJ0iLW-v7LoxhgU&callback=initMap">
     </script>
-
-    
-        
-    </body>
+    <style type="text/css">
+    html, body {
+      height: 100%;
+    }
+    #map_canvas { /* Must bigger size than 100x100 pixels */
+      width: 100%;
+      height: 80%;
+    }
+    button {
+      padding: .5em;
+      margin: .5em;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+    <div id="map_canvas">
+      <button id="button">Click me!</button>
+    </div>
+  </body>
 </html>

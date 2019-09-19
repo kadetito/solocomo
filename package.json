@@ -19,6 +19,7 @@
     "cordova-android": "^8.0.0",
     "cordova-browser": "^6.0.0",
     "cordova-ios": "^5.0.1",
+    "cordova-plugin-googlemaps": "^2.6.2",
     "cordova-plugin-simplelogin": "git+https://github.com/shuhailshuvo/cordova-plugin-SimpleLogin.git",
     "cordova-windows": "^7.0.0",
     "phonegap-plugin-sidebar": "0.0.1",
@@ -33,7 +34,13 @@
   "cordova": {
     "plugins": {
       "cordova-plugin-whitelist": {},
-      "cordova-plugin-simplelogin": {}
+      "cordova-plugin-simplelogin": {},
+      "cordova-plugin-googlemaps": {
+        "PLAY_SERVICES_VERSION": "15.0.1",
+        "ANDROID_SUPPORT_V4_VERSION": "27.+",
+        "LOCATION_WHEN_IN_USE_DESCRIPTION": "This app wants to get your location while this app runs only.",
+        "LOCATION_ALWAYS_USAGE_DESCRIPTION": "This app wants to get your location always, even this app runs in background."
+      }
     },
     "platforms": [
       "browser",

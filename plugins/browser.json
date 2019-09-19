@@ -12,6 +12,9 @@
     },
     "cordova-plugin-simplelogin": {
       "PACKAGE_NAME": "com.webentorn.solocomo"
+    },
+    "cordova-plugin-googlemaps": {
+      "PACKAGE_NAME": "com.webentorn.solocomo"
     }
   },
   "dependent_plugins": {}
