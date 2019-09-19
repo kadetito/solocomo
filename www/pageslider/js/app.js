@@ -25,12 +25,12 @@ var HomePage = React.createClass({
                 
                 
        <div className="row toprow">
-        <div className="col-6"><div className="tarjeta"><a className="btn bothov" href="pizzas.html"><img src="img/iconopizza.png" /></a><p>PIZZAS</p></div></div>
-        <div className="col-6"><div className="tarjeta"><a className="btn bothov"  href="#page2"><img src="img/menusicono.png" /></a><p>CARTA</p></div></div>
+        <div className="col-6"><div className="tarjeta"><a className="btn bothov" href="pizzas.html"><img src="img/iconopizza.png" /></a><p>PEDIR COMIDA</p></div></div>
+        <div className="col-6"><div className="tarjeta"><a className="btn bothov"  href="carta.html"><img src="img/menusicono.png" /></a><p>NUESTRA CARTA</p></div></div>
        </div>
        <div className="row">
-       <div className="col-6"><div className="tarjeta"><a className="btn bothov"  href="#page3"><img src="img/ofertasicono.png" /></a><p>OFERTAS</p></div></div>
-       <div className="col-6"><div className="tarjeta"><a className="btn bothov"  href="#page4"><img src="img/entregaicono.png" /></a><p>ZONAS REPARTO</p></div></div>
+       <div className="col-6"><div className="tarjeta"><a className="btn bothov"  href="pizzas.html"><img src="img/ofertasicono.png" /></a><p>OFERTAS</p></div></div>
+       <div className="col-6"><div className="tarjeta"><a className="btn bothov"  href="reparto.html"><img src="img/entregaicono.png" /></a><p>ZONAS REPARTO</p></div></div>
       </div>           
                     
                     

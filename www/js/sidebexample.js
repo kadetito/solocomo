@@ -166,24 +166,29 @@ var Demo = function (_Component2) {
                             }, _react2['default'].createElement('i', { className: 'fa fa-fw fa-star-o' }), _react2['default'].createElement('span', null, 'home')),
                             _react2['default'].createElement('a', {
                                 key: '1',
-                                href: ''
-                            }, _react2['default'].createElement('i', { className: 'fa fa-fw fa-bell-o' }), _react2['default'].createElement('span', null, 'Alerts')),
+                                href: 'pizzas.html'
+                            }, _react2['default'].createElement('i', { className: 'fa fa-fw fa-bell-o' }), _react2['default'].createElement('span', null, 'pedidos')),
                             _react2['default'].createElement('a', {
                                 key: '2',
-                                href: ''
-                            }, _react2['default'].createElement('i', { className: 'fa fa-fw fa-envelope-o' }), _react2['default'].createElement('span', null, 'Messages')),
+                                href: 'configuracion.html'
+                            }, _react2['default'].createElement('i', { className: 'fa fa-fw fa-envelope-o' }), _react2['default'].createElement('span', null, 'configuración')),
                             _react2['default'].createElement('a', {
                                 key: '3',
-                                href: ''
-                            }, _react2['default'].createElement('i', { className: 'fa fa-fw fa-comment-o' }), _react2['default'].createElement('span', null, 'Comments')),
+                                href: 'reparto.html'
+                            }, _react2['default'].createElement('i', { className: 'fa fa-fw fa-comment-o' }), _react2['default'].createElement('span', null, 'zonas de reparto')),
                             _react2['default'].createElement('a', {
                                 key: '4',
-                                href: ''
-                            }, _react2['default'].createElement('i', { className: 'fa fa-fw fa-bar-chart-o' }), _react2['default'].createElement('span', null, 'Analytics')),
+                                href: 'carta.html'
+                            }, _react2['default'].createElement('i', { className: 'fa fa-fw fa-bar-chart-o' }), _react2['default'].createElement('span', null, 'nuestra carta')),
                             _react2['default'].createElement('a', {
                                 key: '5',
-                                href: ''
-                            }, _react2['default'].createElement('i', { className: 'fa fa-fw fa-newspaper-o' }), _react2['default'].createElement('span', null, 'Reading List'))
+                                href: 'pizzas.html'
+                            }, _react2['default'].createElement('i', { className: 'fa fa-fw fa-newspaper-o' }), _react2['default'].createElement('span', null, 'ofertas')),
+                            _react2['default'].createElement('a', {
+                                key: '6',
+                                href: 'atencion.html'
+                            }, _react2['default'].createElement('i', { className: 'fa fa-fw fa-newspaper-o' }), _react2['default'].createElement('span', null, 'atención al cliente'))
+                      
                         ];
                         break;
                     case 2:

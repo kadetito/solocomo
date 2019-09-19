@@ -5,6 +5,9 @@ $(document).ready(function() {
 	$(document).bind('deviceready', app.onDeviceReady); 
 });
 
+
+
+
 //identifico al empleado para mostrar sus tareas
 var identificacion_empleado = localStorage.getItem("identificador");
 var cryopt = encodeURIComponent(window.btoa(identificacion_empleado));
@@ -17,6 +20,7 @@ var app = {
 	onDeviceReady: function() {
 		console.log('Device is ready');
 		app.readPosts();
+		
 	},
 
 	readPosts: function() {
@@ -35,18 +39,71 @@ var app = {
 	
 	onSuccess: function(data) {
 		var items = [];
-		$.each(data, function(key, val){
-					
 
-//			items.push('<li id="'+val.id_producto+'"><img src="img/'+val.imagen+'" class="items" height="100" alt="" /><br clear="all" /><div><span class="name">'+val.nombre+'</span>: &euro;<span class="price">'+val.precio+'</span> </div></li>');
-			items.push('<div id="card-525495'+val.id_producto+'"><div class="card"><div class="card-header graph"><div class="row"><div class="col-8"><a class="card-link" data-toggle="collapse" data-parent="#card-525495'+val.id_producto+'" href="#card-element-557833'+val.id_producto+'"><div class="diplinline">'+val.nombre+'</div></a></div><div class="col-4"><div class="row"><div class="col-8"><div class="diplinline text-right">'+val.precio+'&euro;</div></div><div class="col-4"><div class="upper" id="'+val.id_producto+'"><h5><span class="badge badge-success">+</span></h5><span class="name" style="display:none">'+val.nombre+'</span><span class="price"  style="display:none">'+val.precio+'</span></div></div></div></div></div></div><div id="card-element-557833'+val.id_producto+'" class="collapse"><div class="card-body"><h4>'+val.nombre+'</h4><img src="img/'+val.imagen+'" class="items" height="100" alt="" />'+val.precio+'<p>'+val.ingredientes+'</p></div></div></div></div>');
-			
-//			items.push('<div id="card-525495'+val.id_producto+'"><div class="card"><div class="card-header"><ul><li id="'+val.id_producto+'"><div><span class="name">+</span><span class="price">+</span></div></li></ul><a class="card-link" data-toggle="collapse" data-parent="#card-525495" href="#card-element-557833">'+val.nombre+' '+val.precio+'</a></div><div id="card-element-557833" class="collapse show"><div class="card-body"><h4>'+val.nombre+'</h4><img src="img/'+val.imagen+'" class="items" height="100" alt="" />'+val.precio+'<p>'+val.ingredientes+'</p></div></div></div></div>');
-			
-						
-		});
-		$('#posts').html(items.join(''));
-		console.log('Exiting onSuccess');
+
+	
+	   
+
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+
+		
+		
+		
+
+							$.each(data, function(key, val){
+								items.push('<div id="card-525495'+val.id_producto+'"><div class="card"><div class="card-header graph"><div class="row"><div class="col-8"><a class="card-link" data-toggle="collapse" data-parent="#card-525495'+val.id_producto+'" href="#card-element-557833'+val.id_producto+'"><div class="diplinline">'+val.tipo+' - '+val.nombre+'</div></a></div><div class="col-4"><div class="row"><div class="col-8"><div class="diplinline text-right">'+val.precio+'&euro;</div></div><div class="col-4"><div class="upper" id="'+val.id_producto+'"><h5><span class="badge badge-success">+</span></h5><span class="name" style="display:none">'+val.nombre+'</span>><span class="price"  style="display:none">'+val.precio+'</span></div></div></div></div></div></div><div id="card-element-557833'+val.id_producto+'" class="collapse"><div class="card-body"><h4>'+val.tipo+' - '+val.nombre+'</h4><p>'+val.ingredientes+'</p><img src="img/'+val.imagen+'" class="items" height="100" alt="" />'+val.precio+'<p>'+val.ingredientes+'</p></div></div></div></div>');	
+							
+							
+
+							
+							
+							
+							
+							});
+							$('#posts').html(items.join(''));
+							console.log('Exiting onSuccess');
+		
+		
+		
+							
+							
+							
+		
+	          
+	    
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 
@@ -70,7 +127,7 @@ var app = {
 		
 		$('#wrap .upper').click(function(){
 			
-			var thisID = $(this).attr('id');
+			var thisID = $(this).attr('id_producto');
 			
 			var itemname  = $(this).find('.name').html();
 			var itemprice = $(this).find('.price').html();
@@ -134,7 +191,7 @@ var app = {
 				   
 
 
-				
+
 				
 				
 				
@@ -345,6 +402,8 @@ var app = {
 	
 	
 };
+
+
 
 
 function include(arr, obj) {
