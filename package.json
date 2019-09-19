@@ -23,6 +23,7 @@
     "cordova-windows": "^7.0.0",
     "phonegap-plugin-sidebar": "0.0.1",
     "react-dom": "^16.9.0",
+    "react-map-gl": "^5.0.10",
     "react-overdrive": "0.0.10",
     "react-shopping-cart": "^1.8.32"
   },
