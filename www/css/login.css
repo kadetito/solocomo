@@ -4,12 +4,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
   outline: none;
 }
 
 body { background-color:#ff5d3c;
-font-size: 62.5%; line-height: 1; padding-bottom: 55px; font-family: Arial, Geneva, sans-serif; }
+font-size: 62.5%; line-height: 1; font-family: Arial, Geneva, sans-serif; }
 
 
 input { outline: none; }
