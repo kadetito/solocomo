@@ -17,7 +17,17 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     
+    
+    
+    
+ 
+  <preference name="GOOGLE_MAPS_ANDROID_API_KEY" value="AIzaSyA1o0kdIeGpzTGwZOLswA8DSy68FAPQfEo" />
+  <preference name="GOOGLE_MAPS_IOS_API_KEY" value="AIzaSyA1o0kdIeGpzTGwZOLswA8DSy68FAPQfEo" />
 
+
+
+
+<preference name="cdvminSdkVersion" value="19" />
   <preference name="android-maxSdkVersion" value="28" />
   <preference name="android-targetSdkVersion" value="26" />
   
