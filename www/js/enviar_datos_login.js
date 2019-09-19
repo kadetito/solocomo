@@ -22,13 +22,13 @@ $("#sending").click(function(){
 	            	    $.each(data, function(i, field){
 	            	    
 	            	    	if(data.status=='ok'){
-	            	    		sessionStorage.setItem("usuario", u);
-	            	    		sessionStorage.setItem("password", p);
-	            	    		sessionStorage.setItem("identificador", data.identificador);
+	            	    		localStorage.setItem("usuario", u);
+	            	    		localStorage.setItem("password", p);
+	            	    		localStorage.setItem("identificador", data.identificador);
 	            	    		window.location.href = "index.html";
 	            	    	} else {
-	            	    		sessionStorage.removeItem("usuario");
-	            	    		sessionStorage.removeItem("password");
+	            	    		localStorage.removeItem("usuario");
+	            	    		localStorage.removeItem("password");
 	            	    		alert("los datos no son correctos");
 	            	    	}
 

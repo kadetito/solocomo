@@ -8,13 +8,13 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   outline: none;
 }
 
-body { background: url('../img/backhome.jpg');   background-size: cover;
+body { background: url('../img/backhome.jpg');   background-size: cover !important;
 font-size: 62.5%; line-height: 1; padding-bottom: 55px; font-family: Arial, Geneva, sans-serif; }
 
 
 input { outline: none; }
 
-.reacciontecla {max-width:220px;height:auto;}
+.reacciontecla {width:100%;height:auto;}
 
 /* page structure */
 #w { width: 100%; margin: 0 auto; padding-top: 25px; }

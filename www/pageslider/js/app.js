@@ -25,7 +25,7 @@ var HomePage = React.createClass({
                 
                 
        <div className="row toprow">
-        <div className="col-6"><div className="tarjeta"><a className="btn bothov" href="#page1"><img src="img/iconopizza.png" /></a><p>PIZZAS</p></div></div>
+        <div className="col-6"><div className="tarjeta"><a className="btn bothov" href="pizzas.html"><img src="img/iconopizza.png" /></a><p>PIZZAS</p></div></div>
         <div className="col-6"><div className="tarjeta"><a className="btn bothov"  href="#page2"><img src="img/menusicono.png" /></a><p>CARTA</p></div></div>
        </div>
        <div className="row">
@@ -59,6 +59,7 @@ var Page1 = React.createClass({
                                     <div className="media-body">Susan Smith</div>
                                 </a>
                             </li>
+                            
                         </ul>
                     </div>
                     

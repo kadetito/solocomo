@@ -45,6 +45,9 @@ font-family: 'Open Sans', sans-serif;
     }
 }
 
+.iconhome{width:100%;height:auto;} 
+ 
+ 
 h1 {
     font-size:24px;
     font-weight:normal;
@@ -103,10 +106,10 @@ a { text-decoration: none; }
 /* =============================================================================
   CUSTOM
 ============================================================================= */
-.content .row{padding:0px;margin:1px;}
-.content .col-6{padding:0px;margin:0px;}
-.content .col-6 p{color:#ffffff;}
-.content .toprow{padding:0px;padding-top:15%;}
+.contentd .row{padding:0px;margin:1px;}
+.contentd .col-6{padding:0px;margin:0px;}
+.contentd .col-6 p{color:#ffffff;}
+.contentd .toprow{padding:0px;padding-top:35%;}
 
 a.bothov{background-color:transparent !important;border:0px;}
 a:active.bothov{opacity:0.5;top:2px;left:2px;}
@@ -145,7 +148,7 @@ video {
 	}
 
 
-#contenedor{padding-top:80px;background-color:#000;}
+#contenedor{padding-top:80px;height:100vh;background-color:transparent;}
 
 #page-wrap{margin-top:0px  !important;top:0 !important;}
 .bm-menu-wrap{margin-top:0px  !important;top:0 !important;}
@@ -187,7 +190,7 @@ z-index: 998;border-bottom:1px solid #dddddd;}
     bottom: 0;
     left: 0;
     width: auto;
-    height: auto;
+    height: 100vh;
     z-index: 2;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
@@ -221,4 +224,31 @@ box-shadow: 7px 7px 2px -5px rgba(0,0,0,0.75);
 .smhead{background-color:#ffffff;font-family: 'Open Sans', sans-serif;font-size:12px;}
 a.retorno{color:#000;font-family: 'Open Sans', sans-serif;font-size:12px !important;}
 .posicionad {margin-top:6px !important;}
-    
+
+
+
+.cart-total-pedido{position:fixed !important;text-align:right;z-index:999;top:80px;left:0px;height:40px;width:100%;background-color:#fff;}
+.cart-total-pedido{padding-top:10px;}
+
+.cart-boton-pedido-in .imitaboton{margin-left:5px;
+width:100px;height:auto;display:inline;padding:6px;
+background-color:#ff5d3c;
+text-transform:Capitalize;
+		-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+font-size:14px;color:#ffffff;
+	}
+.margensupd{margin-top:110px;}
+.cart-total-pedido-in .imitaboton{margin-right:5px;
+width:100px;height:auto;display:inline;padding:6px;
+background-color:#ff5d3c;
+text-transform:Capitalize;
+		-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+font-size:14px;color:#ffffff;
+	}
+ .imitaboton badge{
+font-size:16px;
+	}   

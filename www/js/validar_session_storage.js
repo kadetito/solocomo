@@ -2,13 +2,13 @@
 
 	function validarSesion() {
 
-var identificacion_emplead = sessionStorage.getItem("identificador");
+var identificacion_emplead = localStorage.getItem("identificador");
 if(identificacion_emplead == ''){
 	alert();
 } else {
-	var u = sessionStorage.getItem("usuario", u);
-	var p = sessionStorage.getItem("password", p);
-	var i = sessionStorage.getItem("identificador", i);
+	var u = localStorage.getItem("usuario", u);
+	var p = localStorage.getItem("password", p);
+	var i = localStorage.getItem("identificador", i);
 		    $.ajax({
 	            type: "POST",
 	            datatype: "JSON",
@@ -21,9 +21,9 @@ if(identificacion_emplead == ''){
 	              },
 	            success: function(data) {
 	            	
-	            	var u = sessionStorage.getItem("usuario", u);
-	            	var p = sessionStorage.getItem("password", p);
-	            	var i = sessionStorage.getItem("identificador", i);
+	            	var u = localStorage.getItem("usuario", u);
+	            	var p = localStorage.getItem("password", p);
+	            	var i = localStorage.getItem("identificador", i);
 	            	
 //		                    var data = $.parseJSON(data);
 //			            	    $.each(data, function(i, field){
@@ -31,8 +31,8 @@ if(identificacion_emplead == ''){
 			            	    	if(u!=null){
 
 			            	    	} else {
-			            	    		sessionStorage.removeItem("usuario");
-			            	    		sessionStorage.removeItem("password");
+			            	    		localStorage.removeItem("usuario");
+			            	    		localStorage.removeItem("password");
 			            	    		//alert("sesion no existente");
 			            	    		window.location.href = "login.html";
 			            	    	}
