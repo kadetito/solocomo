@@ -10,6 +10,16 @@ html, body{
   }
 #wrap ul{ margin:0px !important; padding:0px !important; text-align:center }
 
+#wrap .card{border:0px;background-color:#ffffff;
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+}
+
+#wrap .card-header{background-color:#ffffff;
+
+}
+
 
 .graph {margin:0px !important;padding:6px !important;height:42px !important;}
 .graph .row{margin:0px !important;padding:0px !important;}

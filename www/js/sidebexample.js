@@ -162,8 +162,8 @@ var Demo = function (_Component2) {
                         items = [
                             _react2['default'].createElement('a', {
                                 key: '0',
-                                href: ''
-                            }, _react2['default'].createElement('i', { className: 'fa fa-fw fa-star-o' }), _react2['default'].createElement('span', null, 'Favorites')),
+                                href: 'index.html'
+                            }, _react2['default'].createElement('i', { className: 'fa fa-fw fa-star-o' }), _react2['default'].createElement('span', null, 'home')),
                             _react2['default'].createElement('a', {
                                 key: '1',
                                 href: ''

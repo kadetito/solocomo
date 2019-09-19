@@ -129,7 +129,7 @@ var app = {
 				var totalCharge = $('#total-hidden-charges').val();
 				
 				$('#floatingwin .cart-total-pedido-in').html('<div class="imitaboton">Total <span class="badge badge-light">'+totalCharge+'&euro;</span></div>');
-				$('#floatingwin .cart-boton-pedido-in').html('<a class="card-link" data-toggle="collapse" data-parent="#card-646545" href="#card-element-460769"><div class="imitaboton"><img src="img/vercarro.png" alt="ver carro" /> ver carro</div></a>');
+				$('#floatingwin .cart-boton-pedido-in').html('<a class="card-link" data-toggle="collapse" data-parent="#card-646545" href="#card-element-460769"><div class="imitaboton"><img src="img/vercarro.png" alt="ver carro" /> ver pedido</div></a>');
 				
 				   
 
