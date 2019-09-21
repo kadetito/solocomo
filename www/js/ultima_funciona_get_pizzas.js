@@ -65,7 +65,7 @@ var app = {
 				        
 				      }
 				      
-				      items[val.tipo]+='<div id="card-525495'+val.id_producto+'"><div class="card"><div class="card-header graph"><div class="row"><div class="col-8"><a class="card-link" data-toggle="collapse" data-parent="#card-525495'+val.id_producto+'" href="#card-element-557833'+val.id_producto+'"><div class="diplinline" id="dip"><div id="caret" class="icon-left"></div> '+val.nombre+'</div></a></div><div class="col-4"><div class="row"><div class="col-8"><div class="diplinline text-right">'+val.precio+'&euro;</div></div><div class="col-4"><div class="upper" id="'+val.id_producto+'"><h5><span class="badge badge-success">+</span></h5><span class="name" style="display:none">'+val.nombre+'</span>><span class="price"  style="display:none">'+val.precio+'</span></div></div></div></div></div></div><div id="card-element-557833'+val.id_producto+'" class="collapse"><div class="card-body"><h5 class="tituloarticulo">'+val.nombre+'</h5><img src="'+val.imagen+'" class="items imgresponsive" /><p class="textingred">'+val.ingredientes+'</p><h5 class="precioarticul">'+val.precio+'&euro;</h5></div></div></div></div>';   
+				      items[val.tipo]+='<div id="card-525495'+val.id_producto+'"><div class="card"><div class="card-header graph"><div class="row"><div class="col-8"><a class="card-link" data-toggle="collapse" data-parent="#card-525495'+val.id_producto+'" href="#card-element-557833'+val.id_producto+'"><div class="diplinline" id="dip"><div id="caret" class="icon-left"></div> '+val.nombre+'</div></a></div><div class="col-4"><div class="row"><div class="col-8"><div class="diplinline text-right">'+val.precio+'&euro;</div></div><div class="col-4"><div class="upper" id="'+val.id_producto+'"><h5><span class="badge badge-success">+</span></h5><span class="name" style="display:none">'+val.nombre+'</span>><span class="price"  style="display:none">'+val.precio+'</span></div></div></div></div></div></div><div id="card-element-557833'+val.id_producto+'" class="collapse"><div class="card-body"><h4>'+val.tipo+' - '+val.nombre+'</h4><img src="img/'+val.imagen+'" class="items" height="100" alt="" />'+val.precio+'<p>'+val.ingredientes+'</p></div></div></div></div>';   
 				    });
 				    
 				    
@@ -157,11 +157,6 @@ var app = {
 				prev_charges = parseInt(prev_charges)+parseInt(total);
 				$('.cart-total span').html(prev_charges);
 			
-				
-				
-				$('.imitaboton span').html(prev_charges+'&euro;');
-				
-				
 				$('#total-hidden-charges').val(prev_charges);
 			}
 			else
@@ -174,9 +169,9 @@ var app = {
 				
 				$('.cart-total span').html(prev_charges);
 				$('#total-hidden-charges').val(prev_charges);
-				$('.imitaboton span').html(prev_charges+'&euro;');
 
-				$('#left_bar .cart-info').append('<div class="shopp" id="each-'+thisID+'"><div class="label">'+itemname+'</div><div class="shopp-price"> $<em>'+itemprice+'</em></div><span class="shopp-quantity">1</span><span class="badge badge-success remove">-</span><br class="all" /><input type="hidden"  class="suede" value="'+thisID+'" id="id_producto" name="id_producto[]"><input type="hidden"  class="suede" value="'+itemprice+'" name="subtotal[]" id="subtotal"><input class="suede" type="hidden" value="1" name="cantidad[]" id="cantidad"></div>');
+
+				$('#left_bar .cart-info').append('<div class="shopp" id="each-'+thisID+'"><div class="label">'+itemname+'</div><div class="shopp-price"> $<em>'+itemprice+'</em></div><span class="shopp-quantity">1</span><img src="img/remove.png" class="remove" /><br class="all" /><input type="hidden"  class="suede" value="'+thisID+'" id="id_producto" name="id_producto[]"><input type="hidden"  class="suede" value="'+itemprice+'" name="subtotal[]" id="subtotal"><input class="suede" type="hidden" value="1" name="cantidad[]" id="cantidad"></div>');
 				
 				$('#cart').css({'-webkit-transform' : 'rotate(20deg)','-moz-transform' : 'rotate(20deg)' });
 				
@@ -218,7 +213,6 @@ var app = {
 			Arrays.splice(pos,1,"0")
 			
 			prev_charges = parseInt(prev_charges)-parseInt(deduct);
-			$('.imitaboton span').html(prev_charges+'&euro;');
 			$('.cart-total span').html(prev_charges);
 			$('#total-hidden-charges').val(prev_charges);
 			$(this).parent().remove();

@@ -3,12 +3,17 @@ $(document).ready(function() {
 
 
 		
-//	$('#cart_form').submit(function(event) {
+	$('#cart_form').submit(function(event) {
 		
 		
-		$('#Submit').bind('click',function(){	
+//		$('#Submit').bind('click',function(){	
 		
-		
+
+			
+			if(confirm("Se dispone a realizar el pago. Si desea modificar el pedido, por favor, pulse en cancelar.")) {
+				
+
+			alert("hol");
 			event.preventDefault();
 		
 		
@@ -42,57 +47,89 @@ $(document).ready(function() {
 	
 		
 		
-		
+
 
 
 //			var totalCharge = $('#total-hidden-charges').val();
 //			$('#left_bar').html('<p>'+totalCharge+'</p><input type="hidden" value="'+totalCharge+'" />');
 //
 
-
-
-
-	    	var id_product=[];
-	    	id_product.length=0;
-	    	$("input[name='id_producto[]']").each ( function() {id_product.push({'id_producto' : $(this).val() },);});
-		    var id_producto = JSON.stringify(id_product);
-
-	    	var subtota=[];
-	    	subtota.length=0;
-	    	$("input[name='subtotal[]']").each ( function() {subtota.push({'subtotal' : $(this).val() },);});
-		    var subtotal = JSON.stringify(subtota);
-		    
-	    	var cantida=[];
-	    	cantida.length=0;
-	    	$("input[name='cantidad[]']").each ( function() {cantida.push({'cantidad' : $(this).val() },);});
-		    var cantidad = JSON.stringify(cantida);
+			var form_data = decodeURI($(this).serialize());  //prepare form data for Ajax post
+//
+//			id_producto = [];
+//			subtotal = [];
+//			cantidad = [];
+//			id_producto.length=0;
+//			subtotal.length=0;
+//			cantidad.length=0;
+//		    	    $('input[name="id_producto[]"]').each ( function() {
+//		    	    	id_producto.push($(this).val());
+//		    	    });
+//		    	    $('input[name="subtotal[]"]').each ( function() {
+//		    	    	subtotal.push($(this).val());
+//		    	    });
+//		    	    $('input[name="cantidad[]"]').each ( function() {
+//		    	    	cantidad.push($(this).val());
+//		    	    });
+//		    var id_producto = JSON.stringify(id_producto);
+//		    var subtotal = JSON.stringify(subtotal);
+//		    var cantidad = JSON.stringify(cantidad);
+//	    	
+//	    	var myarray = {"id_producto":id_producto,"subtotal":subtotal,"cantidad":cantidad};
+//	    	id_product.length=0;
+//	    	$("input[name='id_producto[]']").each ( function() {id_product.push({'id_producto' : $(this).val()},);});
+//		    var id_producto = JSON.stringify(id_product);
+//
+//	    	
+//	    	subtota.length=0;
+//	    	$("input[name='subtotal[]']").each ( function() {subtota.push({'subtotal' : $(this).val() },);});
+//		    var subtotal = JSON.stringify(subtota);
+//		    
+//	    	
+//	    	cantida.length=0;
+//	    	$("input[name='cantidad[]']").each ( function() {cantida.push({'cantidad' : $(this).val() },);});
+//		    var cantidad = JSON.stringify(cantida);
 		    
 //
 //
 //		    console.log(id_producto); 
 		    
-		    
+			
+//			subtotal = [];
+//			cantidad = [];
+//			
+//			
+			var jsonString = JSON.stringify(form_data);
+			
+			
+			
 			    $.ajax({
 		            type: "POST",
-		            url: "http://www.webentorn.com/gtareas/puente_crud/test.php",
+		            url: "http://www.webentorn.com/gtareas/puente_crud/insertpedidos.puente.php",
 		           
 //		            dataType: "JSON",
 
 		            data: 
 		            { 
-		            	'jsonIdProducto': id_producto,
-		            	'jsonSubtotal': subtotal,
-		            	'jsonCantidad': cantidad,
+		            	'jsonString': jsonString 
+//		            	,
+//		            	'jsonSubtotal': subtotal,
+//		            	'jsonCantidad': cantidad,
 		              },
 		            success: function(response) {
 		          
-		            	console.log("jsonIdProducto: "+id_producto); 
-		            	console.log("jsonSubtotal: "+subtotal); 
-		            	console.log("jsonCantidad: "+cantidad); 
+
+		            	
+		            	console.log("jsonString: "+jsonString); 
+
+		            	
+
+		    	    	
 
 		            },
 		            error: function(xhr, ajaxOptions, thrownError) {
-		                alert(thrownError);
+		
+		                jAlert(thrownError);
 		            }
 		        });
 
@@ -100,14 +137,17 @@ $(document).ready(function() {
 		    return false;
 	    
 			    
-			    
 
+			} else {
+//				alert("No te gusta Actualidad jQuery");
+				event.preventDefault();
+			}
+		
 			
 		});	
 		
 
 
-	
 		
 });
 

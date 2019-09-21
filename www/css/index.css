@@ -172,8 +172,13 @@ video {
 	margin-left:16px;
 	z-index: 999;
 	}
-	
 
+.icon-left {float:left;width:12px;height:12px;background:url('../img/caretright.png');background-repeat:no-repeat;}
+.icon-down {float:left;background-position:-6px,0px; width:12px;height:12px;background:url('../img/caretdown.png');background-repeat:no-repeat;}
+
+
+	
+.cilenciado{text-transform:none;text-align:center;color:#afafaf}
 .logotipocontainer{height:80px;width:100%;
 background-color:#ffffff;
 position: fixed;
@@ -185,7 +190,7 @@ z-index: 998;border-bottom:1px solid #dddddd;}
 	height:90px;width:100%;background-color:transparent !important;border:0px !important;
 	}
 	
-
+.badge-success{background-color:#ff5d3c;}
 .snap-content {
     position: absolute;
     top: 0;
@@ -254,4 +259,14 @@ font-size:14px;color:#ffffff;
 	}
  .imitaboton badge{
 font-size:16px;
-	}   
+	}  
+	
+	
+	a{outline:0 !important}
+a:focus{outline:0 !important}
+a:active{outline:0 !important}
+button{outline:0 !important}
+button:focus {outline:0 !important}
+button:active {outline:0 !important}
+
+	 

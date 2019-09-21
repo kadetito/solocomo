@@ -33,7 +33,11 @@ a .diplinline {color:#000;}
 border-radius: 50%;
 height:23px;width:23px;
 }
-
+.shopp .badge-success{-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+border-radius: 50%;
+height:23px;width:23px;float:right;margin-top:-3px;padding-top:8px;
+}
 #wrap .upper{ 
 	text-align:right;
 	margin:0px !important;padding:0px !important;
@@ -43,13 +47,16 @@ cursor:pointer;
 
 
 
-
 img#cart
 { 
 	bottom:0px;position:fixed; margin-left:30px; /* keep the bar on top  */
 }
 
 
+.tituloarticulo{text-align:center;color:#ff5d3c;font-size:18px;font-weight:bold;}
+.imgresponsive{}
+.precioarticul{float:right;color:#ff5d3c;font-size:18px;font-weight:bold;}
+.textingred{text-transform:none;}
 
 div#bottomBar {
   position: fixed;/* keep the bar on top  */
@@ -94,12 +101,15 @@ button {
 }
 
 .cart-total{ background:#E8E8E8}
+.enuntitulcateg{font-size:16px;border-bottom:1px solid #666666;margin-top:20px;}
+.separador_bloques{}
 
 
-.sendingpedido{width:100%;height:40px;border:0px;text-align:center;background-color:#ff5d3c;
--webkit-border-radius: 20px;
-	-moz-border-radius:  20px;
-	border-radius:   20px;
+
+.sendingpedido{width:100%;height:48px;border:0px;text-align:center;background-color:#ff5d3c;
+-webkit-border-radius: 24px;
+	-moz-border-radius:  24px;
+	border-radius:   24px;
 	margin-top:14px;
 	color:#ffffff;
 	font-size:20px;
@@ -118,8 +128,9 @@ button {
 	}
 	
 div.shopp span{  float:left;}	
-div.shopp div.label{ width:130px; float:left; }		
-div.shopp div.shopp-price{ width:70px; float:left;}
-.quantity{ float:left; margin-top:-3px; width:20px;}
+div.shopp div.label{ width:220px; float:left; }		
+div.shopp div.shopp-price{ width:40px; float:left;}
+div.shopp div.shopp-quantity{width:10px; float:left;text-align:right !important;}
+.quantity{ float:left; margin-top:-3px; width:10px;}
 img.remove{float:right;cursor:pointer;}
 .cart-total b{width:130px;}
